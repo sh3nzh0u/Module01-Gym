@@ -1,0 +1,130 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header-logo {
+    display: block;
+    background-image: url(../logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 97px;
+    height: 30px;
+    margin-top: 9px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 27px;
+}
+.header-item {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 57.6%;
+}
+.header-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 54px;
+    padding-left: 0;
+}
+.header-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #2B3541;
+}
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.greet {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.greet-content {
+    margin-top: 217px;
+}
+.greet-title {
+    color: #2B3541;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.greet-block1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    color: #2B3541;
+    font-weight: 400;
+    font-size: 40px;
+    height: 50px;
+}
+.greet-block2 {
+    margin-left: 92px;
+}
+.greet-description-add {
+    color: #2B3541;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 297px;
+    padding-top: 41px;
+    margin-bottom: 57px;
+}
+.greet-content a {
+    background-color: #FBF138;
+    color: #2B3541;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.visual {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    position: relative;
+}
+.rectangle {
+    width: 464px;
+    height: 850px;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: 0.2;
+}
+.visual img {
+    position: absolute;
+    right: -187px;
+    top: -11px;
+}
+.down {
+    background-image: url(../icons/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 52px;
+    height: 55px;
+    position: absolute;
+    bottom: 10px;
+}
