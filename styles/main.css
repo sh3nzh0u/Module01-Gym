@@ -476,3 +476,37 @@ button {
     letter-spacing: 0.03em;
     padding: 20px 51px 20px;
 }
+.about-ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    padding-left: 0;
+    gap: 67px;
+    margin-top: 58px;
+}
+.about-ul-title {
+    color: #2B3541;
+    font-weight: 700;
+    font-size: 18px;
+}
+.about-ul-text {
+    color: #2B3541;
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 20px;
+}
+.about-ul-item:first-child {
+    max-width: 231px;
+}
+.about-ul-item:nth-child(2n) {
+    max-width: 282px;
+}
+.about-ul-item:nth-child(3n) {
+    max-width: 221px;
+}
+.about-ul-item:last-child {
+    max-width: 204px;
+}
