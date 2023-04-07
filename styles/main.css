@@ -20,8 +20,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 27px;
+    padding-top: 55px;
+    padding-bottom: 21px;
 }
 .header-item {
     display: flex;
@@ -47,9 +47,42 @@ button {
 }
 .social {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    list-style-type: none;
+    padding-left: 0;
 }
+.social-item {
+    margin-left: 30px;
+}
+.IG {
+    display: block;
+    background-image: url(../icons/IN.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+ }
+ .FB {
+    display: block;
+    background-image: url(../icons/FB.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+ }
+ .IG:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
+ .FB:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
 .greet {
     display: flex;
     justify-content: space-between;
@@ -313,10 +346,10 @@ button {
     position: relative;
 }
 .schedule-grid-item-22:hover {
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
-    border-color: transparent;
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    border: 1px solid transparent;
+    border-bottom: #F9F6DA;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
     box-sizing: border-box;
 }
 .schedule-grid-item-22 img {
@@ -332,9 +365,9 @@ button {
 }
 .schedule-grid-item-23:hover {
     border: 1px solid transparent;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    border-bottom: #F9F6DA;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
     box-sizing: border-box;
 }
 .schedule-grid-item-23 img {
@@ -350,9 +383,9 @@ button {
 }
 .schedule-grid-item-24:hover {
     border: 1px solid transparent;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    border-bottom: #F9F6DA;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
     box-sizing: border-box;
 }
 .schedule-grid-item-24 img {
@@ -368,9 +401,9 @@ button {
 }
 .schedule-grid-item-25:hover {
     border: 1px solid transparent;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    border-bottom: #F9F6DA;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
     box-sizing: border-box;
 }
 .schedule-grid-item-25 img {
@@ -386,9 +419,9 @@ button {
 }
 .schedule-grid-item-26:hover {
     border: 1px solid transparent;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    border-bottom: #F9F6DA;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
     box-sizing: border-box;
 }
 .schedule-grid-item-26 img {
@@ -404,9 +437,9 @@ button {
 }
 .schedule-grid-item-27:hover {
     border: 1px solid transparent;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    border-bottom: #F9F6DA;
+    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
     box-sizing: border-box;
 }
 .schedule-grid-item-27 img {
@@ -429,17 +462,124 @@ button {
 }
 .subscribe {
     background-color: #f3f3f3;
+    margin-top: 157px;
+    margin-bottom: 166px;
+    padding-top: 51px;
+    padding-bottom: 84px;
 }
 .subscribe-title {
     font-weight: 700;
     font-size: 40px;
     color: #2B3541;
     text-align: center;
+    margin-bottom: 41px;
+    position: relative;
+    z-index: 1;
+}
+.subscribe-title::before {
+    content: "";
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    position: absolute;
+    border: none;
+    border-radius: 100%;
+    width: 53px;
+    height: 53px;
+    z-index: -1;
+    left: 625px;
+    bottom: 14px;
 }
 .subscribe-content {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    gap: 20px;
+}
+input {
+    border: none;
+    width: 353px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 19px;
+    margin-bottom: 11px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+label {
+    font-size: 11px;
+    color: #8F959D;
+}
+label a {
+    color: #8F959D;
+}
+.checkbox:checked,
+.checkbox:not(:checked){
+   position: absolute;
+   left:-9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+   position: relative;
+   padding-left: 24px;
+   cursor:pointer;
+}
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт активен */
+.checkbox:checked + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: #2B3541;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт активен */
+.checkbox:checked + label::after{
+   content:'';
+   position: absolute;
+   width: 18px;
+   height: 17px;
+   transition: all .2s ease;
+   opacity: 1;
+   left: 1px;
+   top: calc(50% - 9px);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(../icons/check_box.svg);
+}
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: transparent;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::after{
+   content:'';
+   position: absolute;
+   width: 18px;
+   height: 17px;
+   transition: all .2s ease;
+   opacity: 0;
+   left: 1px;
+   top: calc(50% - 9px);
+   background-position: 0 -12px;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(../icons/check\ box\ empty.svg);
+}
+.radio:checked + label::before{
+   border-radius: 100%;
 }
 .subscribe-button {
     color: #2B3541;
@@ -448,7 +588,10 @@ button {
     text-transform: uppercase;
     background-color: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
-    padding: 20px 43px 20px;
+    padding: 23px 43px 23px;
+}
+.about {
+    margin-bottom: 150px;
 }
 .about-content-visual {
     display: flex;
@@ -530,3 +673,107 @@ button {
 .about-ul-item:last-child {
     max-width: 204px;
 }
+footer {
+    background-color: #F3F3F3;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    padding-top: 37px;
+    padding-bottom: 27px;
+}
+.footer-logo {
+    display: block;
+    background-image: url(../logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 97px;
+    height: 30px;
+    margin-top: 9px;
+}
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 91px;
+    padding-left: 74px;
+}
+.footer-menu a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #2B3541;
+}
+.footer-email p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2B3541;
+    position: relative;
+    z-index: 1;
+    padding-left: 184px;
+}
+.footer-email p::before {
+    content: "";
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    position: absolute;
+    border: none;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    z-index: -1;
+    left: 171px;
+    top: -14px;
+}
+.footer-social {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-social-item {
+    margin-left: 30px;
+}
+.footer-IG {
+    display: block;
+    background-image: url(../icons/footer\ IN.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+    transition: 0.3s;
+    transform: scale(1);
+ }
+ .footer-FB {
+    display: block;
+    background-image: url(../icons/footer\ FB.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+    transition: 0.3s;
+    transform: scale(1);
+ }
+ .footer-IG:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
+ .footer-FB:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
+ .footer-extra {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+ }
+ .footer-extra p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2B3541;
+    opacity: 0.3;
+    margin-top: -10px;
+ }
