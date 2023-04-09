@@ -701,7 +701,7 @@ label a:hover {
 footer {
     background-color: #F3F3F3;
 }
-.footer {
+.footer1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
