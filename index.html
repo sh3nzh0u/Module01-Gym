@@ -68,18 +68,21 @@
                             <h3 class="event-item-title">Марафон выносливости</h3>
                             <a href="#" class="event-button">записаться</a>
                             <span class="event-item-tag">марафон</span>
+                            <span class="event-add"></span>
                         </div>
                         <div class="event-grid-item2">
                             <p class="event-item-date">9.07</p>
                             <h3 class="event-item-title">Как стать тренером?</h3>
                             <a href="#" class="event-button">записаться</a>
                             <span class="event-item-tag">вебинар</span>
+                            <span class="event-add"></span>
                         </div>
                         <div class="event-grid-item3">
                             <p class="event-item-date">15.07</p>
                             <h3 class="event-item-title">Йога как стиль жизни</h3>
                             <a href="#" class="event-button">записаться</a>
                             <span class="event-item-tag">вебинар</span>
+                            <span class="event-add"></span>
                         </div>
                     </div>
                 </section>
@@ -91,45 +94,57 @@
                     <div class="schedule-grid">
                         <div class="schedule-grid-item-22">
                             <p class="schedule-item-date">22 июня, 10:00</p>
-                            <span class="schedule-item-img">
-                                <img src="icons/body.svg" alt="bodyicon">
-                            </span>
-                            <h3 class="schedule-item-title">Функциональный тренинг</h3>
+                            <div class="schedule-main22">
+                                <span class="schedule-item-img">
+                                    <img src="icons/body.svg" alt="bodyicon">
+                                </span>
+                                <h3 class="schedule-item-title">Функциональный тренинг</h3>
+                            </div>
                         </div>
                         <div class="schedule-grid-item-23">
                             <p class="schedule-item-date">23 июня, 10:00</p>
-                            <span class="schedule-item-img">
-                                <img src="icons/jump.svg" alt="jumpicon">
-                            </span>
-                            <h3 class="schedule-item-title">Силовой микс</h3>
+                            <div class="schedule-main23">
+                                <span class="schedule-item-img">
+                                    <img src="icons/jump.svg" alt="jumpicon">
+                                </span>
+                                <h3 class="schedule-item-title">Силовой микс</h3>
+                            </div>
                         </div>
                         <div class="schedule-grid-item-24">
                             <p class="schedule-item-date">24 июня, 10:00</p>
-                            <span class="schedule-item-img">
-                                <img src="icons/bottle.svg" alt="bottleicon">
-                            </span>
-                            <h3 class="schedule-item-title">Body sculpt</h3>
+                            <div class="schedule-main24">
+                                <span class="schedule-item-img">
+                                    <img src="icons/bottle.svg" alt="bottleicon">
+                                </span>
+                                <h3 class="schedule-item-title">Body sculpt</h3>
+                            </div>
                         </div>
                         <div class="schedule-grid-item-25">
                             <p class="schedule-item-date">25 июня, 11:00</p>
-                            <span class="schedule-item-img">
-                                <img src="icons/heart.svg" alt="hearticon">
-                            </span>
-                            <h3 class="schedule-item-title">Дыхательные практики</h3>
+                            <div class="schedule-main25">
+                                <span class="schedule-item-img">
+                                    <img src="icons/heart.svg" alt="hearticon">
+                                </span>
+                                <h3 class="schedule-item-title">Дыхательные практики</h3>
+                            </div>
                         </div>
                         <div class="schedule-grid-item-26">
                             <p class="schedule-item-date">26 июня, 11:00</p>
-                            <span class="schedule-item-img">
-                                <img src="icons/dumbbell.svg" alt="dumbbellicon">
-                            </span>
-                            <h3 class="schedule-item-title">L.A.B.</h3>
+                            <div class="schedule-main26">
+                                <span class="schedule-item-img">
+                                    <img src="icons/dumbbell.svg" alt="dumbbellicon">
+                                </span>
+                                <h3 class="schedule-item-title">L.A.B.</h3>
+                            </div>
                         </div>
                         <div class="schedule-grid-item-27">
                             <p class="schedule-item-date">27 июня, 10:00</p>
-                            <span class="schedule-item-img">
-                                <img src="icons/weight.svg" alt="weighticon">
-                            </span>
-                            <h3 class="schedule-item-title">Комплексная разминка</h3>
+                            <div class="schedule-main27">
+                                <span class="schedule-item-img">
+                                    <img src="icons/weight.svg" alt="weighticon">
+                                </span>
+                                <h3 class="schedule-item-title">Комплексная разминка</h3>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -147,7 +162,7 @@
                         </div>
                         <button type="submit" class="subscribe-button">подписаться</button>
                     </div>
-                </div>>
+                </div>
             </div>
             <div class="container">
                 <article class="about">
@@ -237,5 +252,33 @@
             </footer>
         </div>
     </main>
+    <div class="modal" id="modal">
+        <a href="#" class="header-logo"></a>
+        <ul class="header-menu">
+            <li> <a href="#">Мероприятия</a></li>
+            <hr class="hr1"></hr>
+            <li> <a href="#">Расписание</a></li>
+            <hr class="hr2"></hr>
+            <li> <a href="#">О компании</a></li>
+        </ul>
+        <ul class="social">
+            <li class="social-item">
+               <a href="#" target="_blank" class="IG"></a>
+            </li>
+            <li class="social-item">
+               <a href="#" target="_blank" class="FB"></a>
+            </li>
+        </ul>
+        <button class="burger-close" onclick="closeModal()"></button>
+    </div>
+    <script>
+        function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
+        }
+    </script>
 </body>
 </html>
