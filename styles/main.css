@@ -76,8 +76,8 @@ button {
     transition: 0.3s;
     transform: scale(1);
     opacity: 0.8;
- }
- .FB {
+}
+.FB {
     display: block;
     background-image: url(../icons/FB.svg);
     background-size: cover;
@@ -87,12 +87,12 @@ button {
     transition: 0.3s;
     transform: scale(1);
     opacity: 0.8;
- }
- .IG:hover {
+}
+.IG:hover {
     transform: scale(1.2);
     opacity: 1;
- }
- .FB:hover {
+}
+.FB:hover {
     transform: scale(1.2);
     opacity: 1;
  }
@@ -103,6 +103,7 @@ button {
 }
 .greet-content {
     margin-top: 217px;
+    flex-basis: calc(100% - 30vw);
 }
 .greet-title {
     color: #2B3541;
@@ -153,6 +154,9 @@ button {
     height: 43.68vw;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
+}
+.visual {
+    flex-basis: 30vw;
 }
 .visual img {
     position: absolute;
