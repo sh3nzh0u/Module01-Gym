@@ -173,9 +173,7 @@
                             <a href="#" class="about-button">записаться</a>
                         </div>
                         <div class="about-visual">
-                            <span>
-                                <img src="images/trainer@2x.png" alt="trainer">
-                            </span>
+                            <img src="images/trainer@2x.png" alt="trainer">
                         </div>
                     </div>
                     <ul class="about-ul">
@@ -252,32 +250,34 @@
             </footer>
         </div>
     </main>
-    <div class="modal" id="modal">
-        <a href="#" class="header-logo"></a>
-        <ul class="header-menu">
-            <li> <a href="#">Мероприятия</a></li>
-            <hr class="hr1"></hr>
-            <li> <a href="#">Расписание</a></li>
-            <hr class="hr2"></hr>
-            <li> <a href="#">О компании</a></li>
-        </ul>
-        <ul class="social">
-            <li class="social-item">
-               <a href="#" target="_blank" class="IG"></a>
-            </li>
-            <li class="social-item">
-               <a href="#" target="_blank" class="FB"></a>
-            </li>
-        </ul>
-        <button class="burger-close" onclick="closeModal()"></button>
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <a href="#" class="header-logo"></a>
+            <ul class="header-menu">
+                <li> <a href="#">Мероприятия</a></li>
+                <hr class="hr1"></hr>
+                <li> <a href="#">Расписание</a></li>
+                <hr class="hr2"></hr>
+                <li> <a href="#">О компании</a></li>
+            </ul>
+            <ul class="social">
+                <li class="social-item">
+                   <a href="#" target="_blank" class="IG"></a>
+                </li>
+                <li class="social-item">
+                   <a href="#" target="_blank" class="FB"></a>
+                </li>
+            </ul>
+            <button class="burger-close" onclick="closeModal()"></button>
+        </div>
     </div>
     <script>
         function openModal() {
-            document.getElementById("modal").style.top = "0px";
+            document.getElementById("overlay").style.top = "0px";
         }
 
         function closeModal() {
-            document.getElementById("modal").style.top = "-400px";
+            document.getElementById("overlay").style.top = "-1000px";
         }
     </script>
 </body>

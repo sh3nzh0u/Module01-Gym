@@ -39,18 +39,12 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: #2B3541;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 8px;
+    transition: 0.2s;
 }
-.header-menu a::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #2B3541;
-    opacity: 0;
-    margin-top: 13px;
-    transition: opacity 0.2s;
-}
-.header-menu a:hover .header-menu a::after {
-    opacity: 1;
+.header-menu a:hover {
+    border-bottom: 1px solid #2B3541;
 }
 button {
     border: none;
@@ -76,8 +70,8 @@ button {
     transition: 0.3s;
     transform: scale(1);
     opacity: 0.8;
- }
- .FB {
+}
+.FB {
     display: block;
     background-image: url(../icons/FB.svg);
     background-size: cover;
@@ -87,12 +81,12 @@ button {
     transition: 0.3s;
     transform: scale(1);
     opacity: 0.8;
- }
- .IG:hover {
+}
+.IG:hover {
     transform: scale(1.2);
     opacity: 1;
- }
- .FB:hover {
+}
+.FB:hover {
     transform: scale(1.2);
     opacity: 1;
  }
@@ -100,9 +94,11 @@ button {
     display: flex;
     justify-content: space-between;
     position: relative;
+    overflow-y: clip;
 }
 .greet-content {
     margin-top: 217px;
+    flex-basis: calc(100% - 10vw);
 }
 .greet-title {
     color: #2B3541;
@@ -150,14 +146,17 @@ button {
 }
 .rectangle {
     width: 24.167vw;
-    height: 43.68vw;
+    height: 41.68vw;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
+}
+.visual {
+    flex-basis: 30vw;
 }
 .visual img {
     position: absolute;
     right: -187px;
-    top: -11px;
+    bottom: 0;
     max-width: 51.875vw;
 }
 .down {
@@ -531,7 +530,7 @@ label {
 }
 label a {
     color: #8F959D;
-    transition: 0.2;
+    transition: 0.2s;
 }
 label a:hover {
     color: #2B3541;
@@ -615,6 +614,7 @@ label a:hover {
 }
 .about {
     margin-bottom: 150px;
+    overflow: hidden;
 }
 .about-content-visual {
     display: flex;
@@ -840,12 +840,18 @@ footer {
     border: none;
     cursor: pointer;
 }
+.overlay {
+    background: rgba(43, 53, 65, 0.4);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
 .modal {
     background-color: #F3F3F3;
     max-width: 587px;
     text-align: center;
     position: absolute;
-    top: -400px;
     left: 0;
     right: 0;
     margin: 0px auto 0;
@@ -908,14 +914,25 @@ footer {
 }
 
 /* Responsive */
-
- @media (min-width: 1079px) {
+@media (min-width: 1921px) {
+    .visual {
+        flex-basis: 10vw;
+    }
+    .rectangle {
+        width: 464px;
+        height: 842px;
+    }
+}
+@media (min-width: 1079px) {
     .footer2 {
         display: none;
     }
 }
  @media (min-width: 769px) {
     .header-burger {
+        display: none;
+    }
+    .overlay {
         display: none;
     }
 }
@@ -951,7 +968,7 @@ footer {
         height: 42px;
     }
 }
- @media (max-width: 1078px) {
+@media (max-width: 1078px) {
     .container {
         max-width: 768px;
         padding-left: 9px;
@@ -1148,7 +1165,7 @@ footer {
     }
     .subscribe-title {
         font-size: 26px;
-        width: 30%;
+        width: 223px;
         line-height: 32px;
         margin: 0 auto;
         padding-bottom: 52px;
@@ -1189,6 +1206,9 @@ footer {
     .about-visual img {
         height: 29.557vw;
         width: 48.548vw;
+    }
+    .about-visual:after {
+        height: 29.54vw;
     }
     .about-ul {
         display: grid;
@@ -1268,6 +1288,15 @@ footer {
     .header-item {
         flex-basis: 22%;
     }
+    .header-menu a {
+        pointer-events: none;
+    }
+    .IG {
+        pointer-events: none;
+    }
+    .FB {
+        pointer-events: none;
+    }
     .rectangle {
         height: 55.6vw;
     }
@@ -1280,6 +1309,7 @@ footer {
         height: 309px;
         padding-left: 26px;
         padding-top: 7px;
+        pointer-events: none;
     }
     .event-grid-item2 {
         background-image: url(../images/Vebinar\ 1\ tablet.png);
@@ -1287,6 +1317,7 @@ footer {
         height: 309px;
         padding-left: 26px;
         padding-top: 7px;
+        pointer-events: none;
     }
     .event-grid-item3 {
         background-image: url(../images/Vebinar\ 2\ tablet.png);
@@ -1295,9 +1326,37 @@ footer {
         flex-basis: 100%;
         padding-left: 26px;
         padding-top: 7px;
+        pointer-events: none;
     }
     .event-button {
         display: none;
+    }
+    .greet-block2 a, .subscribe-button, .about-button {
+        pointer-events: none;
+    }
+    .schedule-grid-item-22 {
+        pointer-events: none;
+    }
+    .schedule-grid-item-23 {
+        pointer-events: none;
+    }
+    .schedule-grid-item-24 {
+        pointer-events: none;
+    }
+    .schedule-grid-item-25 {
+        pointer-events: none;
+    }
+    .schedule-grid-item-26 {
+        pointer-events: none;
+    }
+    .schedule-grid-item-27 {
+        pointer-events: none;
+    }
+    label a {
+        pointer-events: none;
+    }
+    .overlay {
+        display: block;
     }
 }
 @media (max-width: 728px) {
@@ -1325,9 +1384,17 @@ footer {
         width: 300px;
     }
 }
+@media (max-width: 672px){
+    .about-visual {
+        display: none;
+    }
+    .about-text {
+        max-width: 515px;
+    }
+}
 @media (max-width: 645px) {
     .rectangle {
-        width: 287px;
+        width: 200px;
     }
     .visual img {
         max-width: 50.5vw;
@@ -1339,7 +1406,6 @@ footer {
 }
 @media (max-width: 622px) {
     .rectangle {
-        width: 250px;
         height: 63vw;
     }
     .visual img {
@@ -1386,14 +1452,8 @@ footer {
     .about-content-visual {
         display: block;
     }
-    .about-visual {
-        display: none;
-    }
     .schedule-item-title {
         font-size: 14px;
-    }
-    .subscribe-title {
-        width: 40%;
     }
 }
 @media (max-width: 536px) {
@@ -1637,23 +1697,22 @@ footer {
     }
 }
 @media (max-width: 394px) {
-        .rectangle {
-            height: 69vw;
-        }
+    .rectangle {
+        height: 69vw;
+    }
 }
 @media (max-width: 360px) {
-        .rectangle {
-            height: 68vw;
-        }
+    .rectangle {
+        height: 68vw;
+    }
 }
 @media (max-width: 332px) {
-        .visual img {
-            max-width: 95.5vw;
-            right: 3px;
-            top: 448px;
-        }
-        .schedule-item-title {
-            font-size: 14px;
-        }
-
+    .visual img {
+        max-width: 95.5vw;
+        right: 3px;
+        top: 448px;
+    }
+    .schedule-item-title {
+        font-size: 14px;
+    }
 }
