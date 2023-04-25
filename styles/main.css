@@ -544,7 +544,7 @@ label a:hover {
 .checkbox:not(:checked) + label{
    position: relative;
    padding-left: 24px;
-   cursor:pointer;
+   cursor: pointer;
 }
 /* Стили для псевдоэлемента before с фоном и обводкой, когда пункт активен */
 .checkbox:checked + label::before{
@@ -555,7 +555,6 @@ label a:hover {
    left:0;
    top:calc(50% - 10px);
    background-color: #2B3541;
-   border-radius: 2px;
    border: 2px solid #2B3541;
 }
 /* Стили для псевдоэлемента after с изображением, когда пункт активен */
@@ -581,7 +580,6 @@ label a:hover {
    left:0;
    top:calc(50% - 10px);
    background-color: transparent;
-   border-radius: 2px;
    border: 2px solid #2B3541;
 }
 /* Стили для псевдоэлемента after с изображением, когда пункт НЕ активен */
@@ -872,19 +870,19 @@ footer {
 .modal .header-menu a {
     font-size: 16px;
 }
-.modal .header-menu hr {
+.modal hr {
     height: 1px;
-    width: 100%;
+    width: 95%;
     background-color: #2B3541;
     opacity: 0.2;
     position: absolute;
-    left: 0;
+    left: 10px;
 }
-.modal .header-menu .hr1 {
-    top: 30px;
+.modal .hr1 {
+    top: 128px;
 }
-.modal .header-menu .hr2 {
-    top: 95px;
+.modal .hr2 {
+    top: 191px;
 }
 .modal .social {
     display: flex;
