@@ -1386,6 +1386,9 @@ footer {
     .rectangle {
         width: 300px;
     }
+    .about-text {
+        max-width: 296px;
+    }
 }
 @media (max-width: 672px){
     .about-visual {
