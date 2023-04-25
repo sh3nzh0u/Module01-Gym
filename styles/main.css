@@ -514,7 +514,7 @@ button {
     gap: 20px;
 }
 input {
-    border: none;
+    border: 1px solid transparent;
     width: 353px;
     padding-top: 19px;
     padding-bottom: 19px;
@@ -523,6 +523,11 @@ input {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
+}
+input:focus {
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #FBF138;
 }
 label {
     font-size: 11px;
