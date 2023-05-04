@@ -183,6 +183,15 @@ button {
     margin-top: 40px;
     gap: 20px;
 }
+.event-grid-item, .event-grid-item1, .event-grid-item2, .event-grid-item3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    position: relative;
+    padding-left: 29px;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
 .event-grid-item1 {
     background-image: url(../images/maraphon@2x.png);
     background-size: cover;
@@ -629,20 +638,24 @@ label a:hover {
     color: #2B3541;
     margin: 0;
 }
+.about-content {
+    flex-basis: 43%;
+}
 .about-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    max-width: 483px;
     margin-top: 22px;
     margin-bottom: 58px;
 }
 .about-visual {
     position: relative;
-}
-.about-visual img {
+    background-image: url(../images/trainer@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    flex-basis: 51%;
     height: 336px;
-    width: 581px;
 }
 .about-visual:after {
     content: "";  
@@ -672,7 +685,7 @@ label a:hover {
     list-style: none;
     padding-left: 0;
     gap: 67px;
-    margin-top: 58px;
+    margin-top: 60px;
 }
 .about-ul-title {
     color: #2B3541;
@@ -686,18 +699,6 @@ label a:hover {
     font-size: 18px;
     line-height: 150%;
     margin-top: 20px;
-}
-.about-ul-item:first-child {
-    max-width: 231px;
-}
-.about-ul-item:nth-child(2n) {
-    max-width: 282px;
-}
-.about-ul-item:nth-child(3n) {
-    max-width: 221px;
-}
-.about-ul-item:last-child {
-    max-width: 204px;
 }
 footer {
     background-color: #F3F3F3;
@@ -1045,33 +1046,36 @@ footer {
         font-size: 26px;
     }
     .event-grid {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
         margin-top: 21px;
     }
     .event-grid-item1 {
         background-image: url(../images/maraphon\ tablet.png);
         background-position: right;
-        width: 364px;
         height: 309px;
         padding-left: 26px;
         padding-top: 7px;
+        width: unset;
     }
     .event-grid-item2 {
         background-image: url(../images/Vebinar\ 1\ tablet.png);
         background-position: right;
-        width: 364px;
         height: 309px;
         padding-left: 26px;
         padding-top: 7px;
+        width: unset;
     }
     .event-grid-item3 {
         background-image: url(../images/Vebinar\ 2\ tablet.png);
         background-position: right;
-        width: 367.32px;
-        height: 336px;
-        flex-basis: 100%;
+        height: 309px;
         padding-left: 26px;
         padding-top: 7px;
+        grid-area: 2/1/3/3;
+        width: unset;
     }
     .event-item-title {
         font-size: 16px;
@@ -1194,38 +1198,27 @@ footer {
     .about {
         margin-bottom: 65px;
     }
+    .about-visual {
+        flex-basis: 50%;
+        height: 225px;
+    }
     .about-title {
         font-size: 26px;
     }
     .about-text {
         font-size: 16px;
         margin-top: 18px;
-        max-width: 325px;
         margin-bottom: 54px;
     }
     .about-button {
         padding: 20px 46px 20px;
     }
-    .about-visual img {
-        height: 29.557vw;
-        width: 48.548vw;
-    }
-    .about-visual:after {
-        height: 29.54vw;
-    }
     .about-ul {
         display: grid;
-        grid-template-columns: repeat(2, 373px);
-        grid-template-rows: repeat(2, 127px);
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 67px;
-        gap: unset;
+        gap: 25px;
         justify-content: start;
-    }
-    .about-ul-item:first-child {
-        max-width: 220px;
-    }
-    .about-ul-item:nth-child(2n) {
-        max-width: 257px;
     }
     .about-ul-title {
         font-size: 16px;
@@ -1308,25 +1301,19 @@ footer {
     }
     .event-grid-item1 {
         background-image: url(../images/maraphon\ tablet.png);
-        width: 47.396vw;
-        height: 309px;
         padding-left: 26px;
         padding-top: 7px;
         pointer-events: none;
     }
     .event-grid-item2 {
         background-image: url(../images/Vebinar\ 1\ tablet.png);
-        width: 47.396vw;
-        height: 309px;
         padding-left: 26px;
         padding-top: 7px;
         pointer-events: none;
     }
     .event-grid-item3 {
         background-image: url(../images/Vebinar\ 2\ tablet.png);
-        width: 47.396vw;
-        height: 336px;
-        flex-basis: 100%;
+        height: 309px;
         padding-left: 26px;
         padding-top: 7px;
         pointer-events: none;
@@ -1358,6 +1345,10 @@ footer {
     label a {
         pointer-events: none;
     }
+    .about-visual {
+        flex-basis: 51vw;
+        height: 29.297vw;
+    }
     .overlay {
         display: block;
     }
@@ -1369,15 +1360,6 @@ footer {
     .visual img {
         right: 17px;
     }
-    .event-grid-item1 {
-        width: 46vw;
-    }
-    .event-grid-item2 {
-        width: 46vw;
-    }
-    .event-grid-item3 {
-        width: 46vw;
-    }
 }
 @media (max-width: 720px) {
     .down {
@@ -1385,17 +1367,6 @@ footer {
     }
     .rectangle {
         width: 300px;
-    }
-    .about-text {
-        max-width: 296px;
-    }
-}
-@media (max-width: 672px){
-    .about-visual {
-        display: none;
-    }
-    .about-text {
-        max-width: 515px;
     }
 }
 @media (max-width: 645px) {
@@ -1405,9 +1376,11 @@ footer {
     .visual img {
         max-width: 50.5vw;
     }
-    .about-ul {
-        display: grid;
-        grid-template-columns: repeat(2, 300px);
+    .about-content-visual {
+        display: block;
+    }
+    .about-visual {
+        display: none;
     }
 }
 @media (max-width: 622px) {
@@ -1454,9 +1427,6 @@ footer {
         padding-left: 0;
         padding-right: 0;
         width: 100%;
-    }
-    .about-ul {
-        grid-template-columns: repeat(2, 297px);
     }
     .about-content-visual {
         display: block;
@@ -1513,12 +1483,6 @@ footer {
     .visual img {
         top: 388px;
     }
-    .event-grid-item1 {
-        width: 45vw;
-    }
-    .event-grid-item2 {
-        width: 45vw;
-    }
     .about-button {
         padding-top: 23px;
         padding-bottom: 23px;
@@ -1551,23 +1515,20 @@ footer {
         margin-top: 129px;
     }
     .event-grid {
-        gap: unset;
+        gap: 10px;
     }
     .event-grid-item1 {
         background-image: url(../images/maraphon\ mobile.png);
-        margin-bottom: 11px;
-        width: 46.396vw;
         padding-left: 17px;
     }
     .event-grid-item2 {
         background-image: url(../images/Vebinar\ 1\ mobile.png);
-        margin-bottom: 11px;
-        width: 46.396vw;
         padding-left: 17px;
     }
     .event-grid-item3 {
         background-image: url(../images/Vebinar\ 2\ mobile.png);
         padding-left: 19px;
+        height: unset;
     }
     .event-item-title {
         max-width: 128px;
