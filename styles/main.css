@@ -183,10 +183,12 @@ button {
     margin-top: 40px;
     gap: 20px;
 }
-.event-grid-item, .event-grid-item1, .event-grid-item2, .event-grid-item3 {
+.event-grid-item {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 center;
+    flex-basis: 32%;
+    height: 583px;
     position: relative;
     padding-left: 29px;
     padding-top: 18px;
@@ -194,39 +196,12 @@ button {
 }
 .event-grid-item1 {
     background-image: url(../images/maraphon@2x.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    width: 367.32px;
-    height: 583px;
-    position: relative;
-    padding-left: 29px;
-    padding-top: 18px;
-    box-sizing: border-box;
 }
 .event-grid-item2 {
     background-image: url(../images/Vebinar\ 1@2x.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    width: 367.32px;
-    height: 583px;
-    position: relative;
-    padding-left: 29px;
-    padding-top: 18px;
-    box-sizing: border-box;
 }
 .event-grid-item3 {
     background-image: url(../images/Vebinar\ 2@2x.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    width: 367.32px;
-    height: 583px;
-    position: relative;
-    padding-left: 29px;
-    padding-top: 18px;
-    box-sizing: border-box;
 }
 .event-button {
     background-color: #2B3541;
@@ -245,7 +220,7 @@ button {
     opacity: 0;
     transition: opacity 0.3s;
 }
-.event-grid-item1:after {
+.event-grid-item:after {
     content: "";  
 	width: 100%;
 	height: 100%;    
@@ -256,47 +231,11 @@ button {
 	left: 0;
     transition: opacity 0.2s;
 }
-.event-grid-item1:hover:after {
+.event-grid-item:hover:after {
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
     opacity: 0.6;
 }
-.event-grid-item1:hover .event-button {
-    opacity: 1;
-}
-.event-grid-item2:after {
-    content: "";  
-	width: 100%;
-	height: 100%;    
-	position: absolute;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.3;
-    top: 0;      
-	left: 0;
-    transition: opacity 0.2s;
-}
-.event-grid-item2:hover::after {
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.6;
-}
-.event-grid-item2:hover .event-button {
-    opacity: 1;
-}
-.event-grid-item3:after {
-    content: "";  
-	width: 100%;
-	height: 100%;    
-	position: absolute;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.3;
-    top: 0;      
-	left: 0;
-    transition: opacity 0.2s;
-}
-.event-grid-item3:hover::after {
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.6;
-}
-.event-grid-item3:hover .event-button {
+.event-grid-item:hover .event-button {
     opacity: 1;
 }
 .event-item-date {
@@ -1058,7 +997,6 @@ footer {
         height: 309px;
         padding-left: 26px;
         padding-top: 7px;
-        width: unset;
     }
     .event-grid-item2 {
         background-image: url(../images/Vebinar\ 1\ tablet.png);
@@ -1066,7 +1004,6 @@ footer {
         height: 309px;
         padding-left: 26px;
         padding-top: 7px;
-        width: unset;
     }
     .event-grid-item3 {
         background-image: url(../images/Vebinar\ 2\ tablet.png);
@@ -1075,7 +1012,6 @@ footer {
         padding-left: 26px;
         padding-top: 7px;
         grid-area: 2/1/3/3;
-        width: unset;
     }
     .event-item-title {
         font-size: 16px;
