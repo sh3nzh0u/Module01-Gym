@@ -95,10 +95,10 @@ button {
     justify-content: space-between;
     position: relative;
     overflow-y: clip;
+    gap: 20px;
 }
 .greet-content {
     margin-top: 217px;
-    flex-basis: calc(100% - 10vw);
 }
 .greet-title {
     color: #2B3541;
@@ -151,12 +151,12 @@ button {
     opacity: 0.2;
 }
 .visual {
-    flex-basis: 30vw;
+    flex-basis: 40vw;
 }
 .visual img {
     position: absolute;
-    right: -187px;
-    bottom: 0;
+    right: -181px;
+    bottom: -42px;
     max-width: 51.875vw;
 }
 .down {
@@ -303,20 +303,22 @@ button {
     grid-template-rows: 310px 73px 280px;
     gap: 20px;
 }
-.schedule-grid-item-22 {
-    grid-area: 1 / 1 / 2 / 2;
+.schedule-grid-item {
     border: 1px solid rgba(43, 53, 65, 0.5);
     padding: 20px 30px 20px;
     box-sizing: border-box;
     transition: 0.2s;
     position: relative;
 }
-.schedule-grid-item-22:hover {
+.schedule-grid-item:hover {
     border: 1px solid transparent;
     border-bottom: #F9F6DA;
     background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
     box-sizing: border-box;
+}
+.schedule-grid-item-22 {
+    grid-area: 1 / 1 / 2 / 2;
 }
 .schedule-grid-item-22 img {
     margin-top: 120px;
@@ -324,17 +326,6 @@ button {
 }
 .schedule-grid-item-23 {
     grid-area: 2 / 1 / 4 / 2;
-    border: 1px solid rgba(43, 53, 65, 0.5);
-    padding: 20px 30px 20px;
-    box-sizing: border-box;
-    transition: 0.2s;
-}
-.schedule-grid-item-23:hover {
-    border: 1px solid transparent;
-    border-bottom: #F9F6DA;
-    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
-    box-sizing: border-box;
 }
 .schedule-grid-item-23 img {
     margin-top: 142px;
@@ -342,17 +333,6 @@ button {
 }
 .schedule-grid-item-24 {
     grid-area: 1 / 2 / 3 / 3;
-    border: 1px solid rgba(43, 53, 65, 0.5);
-    padding: 20px 30px 20px;
-    box-sizing: border-box;
-    transition: 0.2s;
-}
-.schedule-grid-item-24:hover {
-    border: 1px solid transparent;
-    border-bottom: #F9F6DA;
-    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
-    box-sizing: border-box;
 }
 .schedule-grid-item-24 img {
     margin-top: 193px;
@@ -360,17 +340,6 @@ button {
 }
 .schedule-grid-item-25 {
     grid-area: 3 / 2 / 4 / 3;
-    border: 1px solid rgba(43, 53, 65, 0.5);
-    padding: 20px 30px 20px;
-    box-sizing: border-box;
-    transition: 0.2s;
-}
-.schedule-grid-item-25:hover {
-    border: 1px solid transparent;
-    border-bottom: #F9F6DA;
-    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
-    box-sizing: border-box;
 }
 .schedule-grid-item-25 img {
     margin-top: 93px;
@@ -378,17 +347,6 @@ button {
 }
 .schedule-grid-item-26 {
     grid-area: 1 / 3 / 2 / 4;
-    border: 1px solid rgba(43, 53, 65, 0.5);
-    padding: 20px 30px 20px;
-    box-sizing: border-box;
-    transition: 0.2s;
-}
-.schedule-grid-item-26:hover {
-    border: 1px solid transparent;
-    border-bottom: #F9F6DA;
-    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
-    box-sizing: border-box;
 }
 .schedule-grid-item-26 img {
     margin-top: 133px;
@@ -396,17 +354,6 @@ button {
 }
 .schedule-grid-item-27 {
     grid-area: 2 / 3 / 4 / 4;
-    border: 1px solid rgba(43, 53, 65, 0.5);
-    padding: 20px 30px 20px;
-    box-sizing: border-box;
-    transition: 0.2s;
-}
-.schedule-grid-item-27:hover {
-    border: 1px solid transparent;
-    border-bottom: #F9F6DA;
-    background: linear-gradient(180deg, rgba(251, 241, 56, 0.7) 0%, rgba(253, 249, 182, 0.315) 100%);
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.12);
-    box-sizing: border-box;
 }
 .schedule-grid-item-27 img {
     margin-top: 182px;
@@ -947,6 +894,8 @@ footer {
     }
     .greet-content {
         margin-top: 26px;
+        padding-bottom: 30px;
+        flex-basis: calc(100% - 36vw);
     }
     .greet-title {
         font-size: 26px;
@@ -966,7 +915,7 @@ footer {
         margin-bottom: 66px;
     }
     .rectangle {
-        width: 360px;
+        width: 100%;
         height: 52.735vw;
     }
     .visual img {
@@ -1029,6 +978,9 @@ footer {
         padding-left: 12px;
         right: unset;
         left: 0px;
+    }
+    .event-button {
+        top: 116px;
     }
     .schedule-header {
         margin-top: 64px;
@@ -1301,14 +1253,8 @@ footer {
     .down {
         display: none;
     }
-    .rectangle {
-        width: 300px;
-    }
 }
 @media (max-width: 645px) {
-    .rectangle {
-        width: 200px;
-    }
     .visual img {
         max-width: 50.5vw;
     }
@@ -1332,7 +1278,6 @@ footer {
 }
 @media (max-width: 586px) {
     .rectangle {
-        width: 208px;
         height: 64vw;
     }
     .visual img {
@@ -1349,9 +1294,11 @@ footer {
         text-align: center;
     }
     .rectangle {
-        margin-top: 73px;
-        height: 53vw;
-        width: 100%;
+        margin-top: 13px;
+        height: 100%;
+    }
+    .visual {
+        flex-basis: 57vw;
     }
     .visual img {
         max-width: 71.5vw;
@@ -1437,10 +1384,8 @@ footer {
     .greet {
         flex-direction: column;
     }
-    .rectangle {
-        margin-top: 73px;
-        height: 70vw;
-        width: 100%;
+    .visual {
+        flex-basis: 75vw;
     }
     .visual img {
         max-width: 95.5vw;
@@ -1606,14 +1551,11 @@ footer {
         left: -12px;
     }
 }
-@media (max-width: 394px) {
-    .rectangle {
-        height: 69vw;
-    }
-}
-@media (max-width: 360px) {
-    .rectangle {
-        height: 68vw;
+@media (max-width: 356px) {
+    .visual img {
+        max-width: 95.5vw;
+        right: 3px;
+        top: 415px;
     }
 }
 @media (max-width: 332px) {
